@@ -3,7 +3,7 @@ from typing import Optional
 from bson import ObjectId
 from pydantic_core import core_schema
 
-# Helper function to handle MongoDB ObjectId
+
 class PyObjectId(str):
     @classmethod
     def __get_pydantic_json_schema__(cls, core_schema, handler):
@@ -25,7 +25,7 @@ class PyObjectId(str):
             raise ValueError("Invalid ObjectId")
         return str(v)
 
-# Base model for MongoDB documents
+
 class MongoDBBaseModel(BaseModel):
     id: Optional[PyObjectId] = Field(default_factory=PyObjectId, alias="_id")
 
@@ -49,7 +49,7 @@ class PassengerCreate(PassengerBase):
 
 class PassengerDB(PassengerBase, MongoDBBaseModel):
     class Config:
-        json_encoders = {ObjectId: str}  # Ensure ObjectId is serialized as a string
+        json_encoders = {ObjectId: str} 
 
 # Ticket model
 class TicketBase(BaseModel):
@@ -64,7 +64,7 @@ class TicketCreate(TicketBase):
 
 class TicketDB(TicketBase, MongoDBBaseModel):
     class Config:
-        json_encoders = {ObjectId: str}  # Ensure ObjectId is serialized as a string
+        json_encoders = {ObjectId: str}  
 
 # Survivor model
 class SurvivorBase(BaseModel):

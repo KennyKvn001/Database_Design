@@ -8,7 +8,7 @@ from database import passengers_collection, tickets_collection, survivors_collec
 
 app = FastAPI()
 
-# Helper function to serialize MongoDB document
+
 def serialize_doc(doc):
     if doc:
         doc["_id"] = str(doc["_id"])  
@@ -110,7 +110,7 @@ async def delete_survivor(survivor_id: int):
         return {"message": "Survivor deleted successfully"}
     raise HTTPException(status_code=404, detail="Survivor not found")
 
-# Run the application
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
