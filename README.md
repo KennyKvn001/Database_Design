@@ -50,7 +50,7 @@ These operations interact with the MYSQL database .
 
 ### Steps:
 
-1. **Fetch Latest Entry:** The script retrieves the most recent transaction record using the API.
+1. **Fetch Latest Entry:** The script retrieves the most recent entry record using the API.
 2. **Prepare Data for Prediction:** The retrieved data is preprocessed.
 3. **ML Model Integration:**
    - We trained a  **Logistic Regression Model** 
