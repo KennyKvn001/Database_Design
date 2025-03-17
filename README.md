@@ -62,8 +62,8 @@ These operations interact with the MYSQL database .
 
 &#x20;
 
-- **Kevin Kenny Mugisha**  - Database Design & SQL Implementation
-- **Bernice Awinpang Akudbilla** – API Development & MongoDB Implementation
+- **Kevin Kenny Mugisha**  -  SQL and MongoDB  Implementation
+- **Bernice Awinpang Akudbilla** – API Development for both SQL and MongoDB
 - **Steven SHYAKA** – Data Fetching & ML Prediction
 
 ---
