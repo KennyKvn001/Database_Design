@@ -90,3 +90,5 @@ These operations interact with the MYSQL database .
 ---
 
 This project follows best practices for database management, API integration, and machine learning model implementation.
+
+Api endpoint: https://database-design-l3k7.onrender.com/docs/
