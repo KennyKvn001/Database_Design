@@ -42,7 +42,7 @@ A **MongoDB** collection was implemented to store unstructured data related to u
 - **Update (PUT):** Modify existing records.
 - **Delete (DELETE):** Remove records from the database.
 
-These operations interact with the PostgreSQL database via an ORM.
+These operations interact with the MYSQL database .
 
 ---
 
