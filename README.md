@@ -12,9 +12,9 @@ This project focuses on designing and implementing a relational (SQL) and NoSQL 
 
 We designed a relational database using **MYSQL** with the following tables:
 
-- **Passenger** (user\_id, name, email, created\_at)
-- **TIckets** (transaction\_id, user\_id, amount, transaction\_date)
-- **Survivors** (product\_id, name, category, price)
+- **Passenger** (passenger_id,Name,Sex, SibSp,Parch,TicketId)
+- **TIckets** (TicketId, Passenger_id, Fare,Cabin,Embarked)
+- **Survivors** (SurvivorId, PassengerId, Survived)
 
 Primary and foreign keys were defined to ensure data integrity. The ERD Diagram was created using **Lucidchart**.
 
@@ -84,7 +84,7 @@ These operations interact with the MYSQL database .
    ```
 4. **Run the Prediction Script:**
    ```bash
-   fetch_data.py
+   python fetch_data.py
    ```
 
 ---
