@@ -10,11 +10,11 @@ This project focuses on designing and implementing a relational (SQL) and NoSQL 
 
 ### Database Schema
 
-We designed a relational database using **PostgreSQL** with the following tables:
+We designed a relational database using **MYSQL** with the following tables:
 
-- **Users** (user\_id, name, email, created\_at)
-- **Transactions** (transaction\_id, user\_id, amount, transaction\_date)
-- **Products** (product\_id, name, category, price)
+- **Passenger** (user\_id, name, email, created\_at)
+- **TIckets** (transaction\_id, user\_id, amount, transaction\_date)
+- **Survivors** (product\_id, name, category, price)
 
 Primary and foreign keys were defined to ensure data integrity. The ERD Diagram was created using **Lucidchart**.
 
@@ -53,8 +53,8 @@ These operations interact with the MYSQL database .
 1. **Fetch Latest Entry:** The script retrieves the most recent transaction record using the API.
 2. **Prepare Data for Prediction:** The retrieved data is preprocessed.
 3. **ML Model Integration:**
-   - We used a **Linear Regression Model** trained during our Intro to ML course.
-   - The model predicts potential future transactions.
+   - We trained a  **Logistic Regression Model** 
+   - The model predicts whether a passenger survived or not.
 
 ---
 
