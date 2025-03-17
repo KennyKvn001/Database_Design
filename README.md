@@ -75,7 +75,7 @@ These operations interact with the PostgreSQL database via an ORM.
    git clone https://github.com/KennyKvn001/Database_Design.git
    cd Database_Design
    ```
-2. **Set Up PostgreSQL & MongoDB:**
+2. **Set Up MYSQL DB & MongoDB:**
    - Import the SQL schema.
    - Run MongoDB collections.
 3. **Start FastAPI Server:**
